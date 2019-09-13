@@ -93,16 +93,22 @@ a:hover {
 
 .footerContainer {
   height: 380px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   width: 100%;
   padding-top: 40px;
 }
 
+.footerLogo {
+  margin: 0 auto;
+}
+
 .footerLinks {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 100%;
+  padding: 0 3%;
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -118,12 +124,53 @@ a:hover {
   margin-bottom: 70px;
   font-size: 0.8em;
   letter-spacing: 2px;
+  text-align: center;
 }
+
+.socialBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
 
 .endNotes {
   font-size: 0.7em;
-  width: 60%;
+  width: 76%;
   margin: 0 auto;
   line-height: 30px;
   text-align: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 975px) {
+  .buttonsContainer {
+    margin: 0;
+    width: 100%;
+  }
+
+  .buttonsContainer > a {
+    display: none;
+  }
+
+  .footerLinks {
+    flex-direction: column;
+  }
+
+  .footerLogo {
+    margin: 0 0 100px 0;
+  }
+
+  .linksBox {
+    flex-direction: column;
+  }
+
+  .linksBox > div {
+    margin: 0 auto;
+    font-size: 0.7em;
+  }
 }

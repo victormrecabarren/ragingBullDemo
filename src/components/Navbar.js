@@ -31,10 +31,9 @@ class Navbar extends Component {
             href="#">
             FREE OPTIONS HANDBOOK
           </a>
-          <a
-            href="#">
+          <div className="search">
             search
-          </a>
+          </div>
         </div>
       </div>
       </>
