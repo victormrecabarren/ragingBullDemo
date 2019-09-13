@@ -1,33 +1,129 @@
-.App {
+
+
+.mainContainer {
+  height: 100vh;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+
+a {
+  color: black;
+  font-size: 0.9em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.logo {
+  height: 35px;
+  margin: 0
+}
+
+
+.buttonsContainer {
+  width: 80%;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.body {
+  width: 100vw;
+  height: 900px;
+  padding-top: 100px;
+  background-image: url('https://ragingbull.com/wp-content/uploads/2019/08/DA-bg.jpg');
+  background-position: top center;
+  background-size: cover;
+}
+
+.mainContent {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mainContent > h1 {
+  font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+  color: white;
+  font-size: 70px;
+  font-weight: 800;
+  text-transform: capitalize;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.mainContent > h1 > span {
+  color: #41f900;
+  text-transform: capitalize;
+  padding: 0 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainContent > h4 {
+  color: white;
+  text-align: center;
+  font-weight: 800;
+
+}
+
+.kyleDennis {
+  color: white;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.dollarAce {
+  width: 100%;
+}
+
+.btn {
+  background-color: #41f900;
+  display: block;
+  margin: 50px auto;
+  width: 150px;
+}
+
+.footerContainer {
+  height: 380px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  padding-top: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.footerLinks {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.linksBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.linksBox > div {
+  padding: 10px;
+  margin-bottom: 70px;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+}
+
+.endNotes {
+  font-size: 0.7em;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 30px;
+  text-align: center;
 }
