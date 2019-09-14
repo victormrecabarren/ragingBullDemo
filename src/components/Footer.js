@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+import fb from '../assets/fb.png'
+import twitter from '../assets/twitter.png'
+
 class Footer extends Component {
   render() {
     return(
@@ -39,10 +42,10 @@ class Footer extends Component {
           <div className="socialBox">
             <img
               className="smIcons"
-              src="./fb.png" />
+              src={fb} />
             <img
               className="smIcons"
-              src="./twitter.png" />
+              src={twitter} />
           </div>
         </div>
 
