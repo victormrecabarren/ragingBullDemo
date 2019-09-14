@@ -7,11 +7,10 @@ import Footer from './components/Footer'
 
 class App extends Component {
   state = {
-    mobile: this.mobile,
+    mobile: (window.innerWidth > 900 ? false : true),
     width: window.innerWidth,
   }
 
-  mobile = window.innerWidth > 900 ? false : true
 
   componentDidMount() {
     window.addEventListener('resize', this.handleResize)
@@ -22,7 +21,7 @@ class App extends Component {
   }
 
   handleResize = () => {
-    if (window.innerWidth > 900) {
+    if (window.innerWidth > 975) {
       this.setState({
         width: window.innerWidth,
         mobile: false,
