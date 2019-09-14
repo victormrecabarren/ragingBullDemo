@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+import DropDown from './DropDown'
 
 class Navbar extends Component {
   state = {
     searching: false,
+    dropDown: false,
   }
 
 
@@ -63,7 +65,11 @@ class Navbar extends Component {
                 <img
                   style={{height: "24px"}}
                   src="/burger.png"
-
+                  onClick={() => {
+                    this.setState({
+                      dropDown: !this.state.dropDown
+                    })
+                  }}
                  />
                 :
                 null
@@ -77,7 +83,7 @@ class Navbar extends Component {
               className="search-bar"
             />
             <img
-              style={{height: "20px", margin: "auto 0", padding: 0}}
+              style={{height: "20px", margin: "auto 0", padding: "0 8px"}}
               src="/exit.png"
               onClick={() => {
                 this.setState({
@@ -88,6 +94,16 @@ class Navbar extends Component {
           </div>
         }
         </div>
+        {
+          this.props.mobile
+          ?
+          <DropDown
+            open={this.state.dropDown}
+          />
+          :
+          null
+        }
+
       </div>
       </>
     )
