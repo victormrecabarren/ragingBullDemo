@@ -10,34 +10,39 @@ class Footer extends Component {
             className="footerLogo"
             src="https://ragingbull.com/wp-content/themes/ragingbullwp/assets/img/logo-rb-2-org.svg"
           />
-          <div
+          <ul
             className="linksBox"
             >
-            <div>
+            <li>
               HOME
-            </div>
-            <div>
+            </li>
+            <li>
               OUR TRAINERS
-            </div>
-            <div>
+            </li>
+            <li>
               AFFILIATE
-            </div>
-            <div>
+            </li>
+            <li>
               ARTICLES
-            </div>
-            <div>
+            </li>
+            <li>
               FAQ
-            </div>
-            <div>
+            </li>
+            <li>
               CONTACT
-            </div>
-            <div>
+            </li>
+            <li>
               LOGIN
-            </div>
-          </div>
+            </li>
+          </ul>
 
           <div className="socialBox">
-            sm links
+            <img
+              className="smIcons"
+              src="./fb.png" />
+            <img
+              className="smIcons"
+              src="./twitter.png" />
           </div>
         </div>
 
