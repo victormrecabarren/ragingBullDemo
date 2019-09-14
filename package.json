@@ -2,7 +2,7 @@
   "name": "mockup",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://victormrecabarren/github.io/ragingBullDemo",
+  "homepage": "http://victormrecabarren.github.io/ragingBullDemo",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
