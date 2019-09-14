@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import DropDown from './DropDown'
 
+import burger from '../assets/burger.png'
+import search from '../assets/search.png'
+import exit from '../assets/search.png'
+
 class Navbar extends Component {
   state = {
     searching: false,
@@ -53,7 +57,7 @@ class Navbar extends Component {
             <div className="console">
             <img
               style={{height: "25px"}}
-              src="/search.png"
+              src={search}
               onClick={() => {
                 this.setState({
                   searching: true,
@@ -64,7 +68,7 @@ class Navbar extends Component {
                 this.props.mobile ?
                 <img
                   style={{height: "24px"}}
-                  src="/burger.png"
+                  src={burger}
                   onClick={() => {
                     this.setState({
                       dropDown: !this.state.dropDown
@@ -84,7 +88,7 @@ class Navbar extends Component {
             />
             <img
               style={{height: "20px", margin: "auto 0", padding: "0 8px"}}
-              src="/exit.png"
+              src={exit}
               onClick={() => {
                 this.setState({
                   searching: false,
