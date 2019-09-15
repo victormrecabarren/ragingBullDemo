@@ -4,7 +4,7 @@ import DropDown from './DropDown'
 import burger from '../assets/burger.png'
 import search from '../assets/search.png'
 import exit from '../assets/exit.png'
-
+ 
 class Navbar extends Component {
   state = {
     searching: false,
