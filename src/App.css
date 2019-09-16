@@ -91,14 +91,14 @@ a:hover {
   z-index: 100;
   overflow: hidden;
   width: 100%;
-  height: 0%;
+  max-height: 0%;
   background-color: white;
-  transition: height 0.5s ease-in
+  transition: max-height 0.5s ease-in
 }
 
 .dropDownMenuOpen {
   /* transform: translateY(0); */
-  height: 100%;
+  max-height: 200vh;
   background-color: rgba(53,104,174,1);
 }
 
