@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ragingBullDemo/static/css/main.421def06.chunk.css",
+    "main.css": "/ragingBullDemo/static/css/main.801ba55b.chunk.css",
     "main.js": "/ragingBullDemo/static/js/main.67dd784f.chunk.js",
     "main.js.map": "/ragingBullDemo/static/js/main.67dd784f.chunk.js.map",
     "runtime~main.js": "/ragingBullDemo/static/js/runtime~main.e7153dbd.js",
@@ -8,8 +8,8 @@
     "static/js/2.9432653c.chunk.js": "/ragingBullDemo/static/js/2.9432653c.chunk.js",
     "static/js/2.9432653c.chunk.js.map": "/ragingBullDemo/static/js/2.9432653c.chunk.js.map",
     "index.html": "/ragingBullDemo/index.html",
-    "precache-manifest.d2ab5cc9447f8c02b82ae135787f2518.js": "/ragingBullDemo/precache-manifest.d2ab5cc9447f8c02b82ae135787f2518.js",
+    "precache-manifest.d22eac6df8efac79f054021c362fb67e.js": "/ragingBullDemo/precache-manifest.d22eac6df8efac79f054021c362fb67e.js",
     "service-worker.js": "/ragingBullDemo/service-worker.js",
-    "static/css/main.421def06.chunk.css.map": "/ragingBullDemo/static/css/main.421def06.chunk.css.map"
+    "static/css/main.801ba55b.chunk.css.map": "/ragingBullDemo/static/css/main.801ba55b.chunk.css.map"
   }
 }
