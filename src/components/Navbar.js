@@ -4,12 +4,13 @@ import DropDown from './DropDown'
 import burger from '../assets/burger.png'
 import search from '../assets/search.png'
 import exit from '../assets/exit.png'
- 
+
 class Navbar extends Component {
   state = {
     searching: false,
-    dropDown: false,
   }
+
+
 
 
   render() {
@@ -70,9 +71,7 @@ class Navbar extends Component {
                   style={{height: "24px"}}
                   src={burger}
                   onClick={() => {
-                    this.setState({
-                      dropDown: !this.state.dropDown
-                    })
+                    this.props.toggleDropDown()
                   }}
                  />
                 :
@@ -98,15 +97,6 @@ class Navbar extends Component {
           </div>
         }
         </div>
-        {
-          this.props.mobile
-          ?
-          <DropDown
-            open={this.state.dropDown}
-          />
-          :
-          null
-        }
 
       </div>
       </>

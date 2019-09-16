@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Navbar from './components/Navbar'
+import DropDown from './components/DropDown'
 import Body from './components/Body'
 import Footer from './components/Footer'
+
 
 class App extends Component {
   state = {
     mobile: (window.innerWidth > 900 ? false : true),
     width: window.innerWidth,
+    dropDown: false,
   }
 
 
@@ -32,8 +35,14 @@ class App extends Component {
         mobile: true,
       })
     }
-
   }
+
+toggleDropDown = () => {
+  this.setState({
+    dropDown: !this.state.dropDown,
+  })
+}
+
 
 
 
@@ -45,7 +54,17 @@ class App extends Component {
         <Navbar
           width={this.state.width}
           mobile={this.state.mobile}
+          toggleDropDown={this.toggleDropDown}
          />
+         {
+           this.state.mobile
+           ?
+           <DropDown
+             open={this.state.dropDown}
+           />
+           :
+           null
+         }
         <div className="body">
           <Body />
         </div>
