@@ -89,14 +89,16 @@ a:hover {
   top: 60px;
   left: 0;
   z-index: 100;
+  overflow: hidden;
   width: 100%;
+  height: 0%;
   background-color: white;
-  transform: translateY(-150%);
-  transition: transform 0.5s ease-in
+  transition: height 0.5s ease-in
 }
 
 .dropDownMenuOpen {
-  transform: translateY(0);
+  /* transform: translateY(0); */
+  height: 100%;
   background-color: rgba(53,104,174,1);
 }
 
