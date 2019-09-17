@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ragingBullDemo/precache-manifest.90408f93ebb990f2eff283fbe2ff8803.js"
+  "/ragingBullDemo/precache-manifest.0583b311650e9b419e279bdf3615b572.js"
 );
 
 self.addEventListener('message', (event) => {

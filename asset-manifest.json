@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ragingBullDemo/static/css/main.5af08c0e.chunk.css",
-    "main.js": "/ragingBullDemo/static/js/main.88376b35.chunk.js",
-    "main.js.map": "/ragingBullDemo/static/js/main.88376b35.chunk.js.map",
+    "main.css": "/ragingBullDemo/static/css/main.22182af2.chunk.css",
+    "main.js": "/ragingBullDemo/static/js/main.851cd94d.chunk.js",
+    "main.js.map": "/ragingBullDemo/static/js/main.851cd94d.chunk.js.map",
     "runtime~main.js": "/ragingBullDemo/static/js/runtime~main.e7153dbd.js",
     "runtime~main.js.map": "/ragingBullDemo/static/js/runtime~main.e7153dbd.js.map",
     "static/js/2.9432653c.chunk.js": "/ragingBullDemo/static/js/2.9432653c.chunk.js",
     "static/js/2.9432653c.chunk.js.map": "/ragingBullDemo/static/js/2.9432653c.chunk.js.map",
     "index.html": "/ragingBullDemo/index.html",
-    "precache-manifest.90408f93ebb990f2eff283fbe2ff8803.js": "/ragingBullDemo/precache-manifest.90408f93ebb990f2eff283fbe2ff8803.js",
+    "precache-manifest.0583b311650e9b419e279bdf3615b572.js": "/ragingBullDemo/precache-manifest.0583b311650e9b419e279bdf3615b572.js",
     "service-worker.js": "/ragingBullDemo/service-worker.js",
-    "static/css/main.5af08c0e.chunk.css.map": "/ragingBullDemo/static/css/main.5af08c0e.chunk.css.map"
+    "static/css/main.22182af2.chunk.css.map": "/ragingBullDemo/static/css/main.22182af2.chunk.css.map"
   }
 }
