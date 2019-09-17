@@ -19,11 +19,13 @@ class Navbar extends Component {
       <div className="navbar fixed-top">
         <div className="buttonsContainer">
           <div className="logoContainer">
+            <a href="http://www.ragingbull.com">
             <img
               src="https://ragingbull.com/wp-content/uploads/2017/05/ragingbull-logo-new.png"
               className="logo"
               alt="logo"
             />
+            </a>
 
           </div>
           {
@@ -58,6 +60,7 @@ class Navbar extends Component {
             <div className="console">
             <img
               style={{height: "25px"}}
+              className="search-glass"
               src={search}
               onClick={() => {
                 this.setState({
@@ -70,6 +73,7 @@ class Navbar extends Component {
                 <img
                   style={{height: "24px"}}
                   src={burger}
+                  className="burger"
                   onClick={() => {
                     this.props.toggleDropDown()
                   }}

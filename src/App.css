@@ -35,13 +35,18 @@
   flex: 1;
 }
 
+.logo:hover {
+  cursor: pointer;
+}
+
 .headerLinks {
   margin: auto 0;
+  padding-left: 100px;
 }
 
 a {
   color: black;
-  font-size: 0.9em;
+  font-size: 12px;
   padding: 20px;
 
 }
@@ -61,6 +66,10 @@ a:hover {
 .console > img {
   padding: 0 8px;
   margin: auto 0;
+}
+
+.search-glass:hover, .burger:hover {
+  cursor: pointer;
 }
 
 .search-bar {
@@ -265,7 +274,7 @@ a:hover {
 
 
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1030px) {
 
   .buttonsContainer {
     margin: 0;
