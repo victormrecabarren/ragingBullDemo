@@ -74,16 +74,28 @@ a:hover {
 }
 
 .search-glass {
-  transition: all 1.3s ease;
-  position: relative;
+  transition-property: all;
+  transition-duration: 1.2s;
+  transition-timing-function: cubic-bezier(.5, .16, .0, .99);
   padding-right: 20px;
 }
 
- .burger {
-   transition: all 0.8s ease;
-   position: relative;
- }
+.burger {
+  transition-property: all;
+  transition-duration: .8s;
+  transition-timing-function: cubic-bezier(.5, .16, .0, .99);
+  position: relative;
+}
 
+.search-glass.hidden {
+  transform: translateY(50%);
+  opacity: 0;
+}
+
+.burger.hidden {
+  transform: translateY(100%);
+  opacity: 0;
+}
 
 .search-glass:hover, .burger:hover {
   cursor: pointer;
@@ -94,11 +106,7 @@ a:hover {
 }
 
 
-.hidden {
-  transform: translateY(200%);
-  opacity: 0;
-  z-index: -1000;
-}
+
 
 
 .noDisplay {
