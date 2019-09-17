@@ -40,7 +40,7 @@ class Navbar extends Component {
                 href="#">
                 OUR TRAINERS
               </a>
-              <a
+              <a className="freeOptions"
                 href="#">
                 FREE OPTIONS HANDBOOK
               </a>

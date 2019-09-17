@@ -172,13 +172,21 @@ a:hover {
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
+  background-color: white;
+  transition: background-color 0.5s ease
 }
 
-.dropDownLink > ul {
+.dropDownLink:hover {
+  background-color: rgba(245,245,245,1);
+  color: gray
+}
+
+.dropDownList {
   list-style: none;
   margin-bottom: 0;
   padding: 0;
 }
+
 
 
 .linkHeader {
@@ -188,11 +196,17 @@ a:hover {
 
 .dropDownList {
   padding: 0 auto;
+  background-color: white;
 }
 
 .listItem {
-  border-bottom: 1px solid rgba(0,0,0,0.1)
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
 
+
+
+.dropDownLink.freeOptions, a.freeOptions {
+  color: #0791F2;
 }
 
 
