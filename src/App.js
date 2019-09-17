@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 
 class App extends Component {
   state = {
-    mobile: (window.innerWidth > 900 ? false : true),
+    mobile: (window.innerWidth > 975 ? false : true),
     width: window.innerWidth,
     dropDown: false,
   }
