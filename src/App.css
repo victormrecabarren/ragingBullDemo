@@ -68,15 +68,48 @@ a:hover {
   margin: auto 0;
 }
 
+.searchAndBurgerBox {
+  position: absolute;
+  padding: 17px;
+}
+
+.search-glass {
+  transition: all 1.3s ease;
+  position: relative;
+  padding-right: 20px;
+}
+
+ .burger {
+   transition: all 0.8s ease;
+   position: relative;
+ }
+
+
 .search-glass:hover, .burger:hover {
   cursor: pointer;
 }
+
+.hiddenBox {
+  z-index: -1000
+}
+
+
+.hidden {
+  transform: translateY(200%);
+  opacity: 0;
+  z-index: -1000;
+}
+
+
+.noDisplay {
+  display: none;
+}
+
 
 .search-bar {
   width: 100%;
   height: 100%;
   border: none;
-
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 2px;
@@ -94,6 +127,8 @@ a:hover {
   border-style: none;
   outline: none;
 }
+
+
 
 .dropDownMenu {
   position: absolute;

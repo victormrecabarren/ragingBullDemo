@@ -12,7 +12,6 @@ class Navbar extends Component {
 
 
 
-
   render() {
     return(
       <>
@@ -54,54 +53,61 @@ class Navbar extends Component {
             : null
           }
 
-          {
-            !this.state.searching
-            ?
-            <div className="console">
-            <img
-              style={{height: "25px"}}
-              className="search-glass"
-              src={search}
-              onClick={() => {
-                this.setState({
-                  searching: true,
-                })
-              }}
-             />
-              {
-                this.props.mobile ?
-                <img
-                  style={{height: "24px"}}
-                  src={burger}
-                  className="burger"
-                  onClick={() => {
-                    this.props.toggleDropDown()
-                  }}
-                 />
-                :
-                null
-              }
-          </div>
-          :
+
           <div className="console">
             <input
               type="text"
               placeholder="search ..."
-              className="search-bar"
+              className={this.state.searching ? "search-bar" : "search-bar noDisplay"}
             />
             <img
               style={{height: "20px", margin: "auto 0", padding: "0 8px"}}
               src={exit}
+              className={this.state.searching? "exitButton" : "noDisplay"}
               onClick={() => {
                 this.setState({
                   searching: false,
                 })
               }}
              />
-          </div>
-        }
-        </div>
+             <div className={this.state.searching ? "searchAndBurgerBox hiddenBox": "searchAndBurgerBox"}>
+             <img
+               style={{height: "25px"}}
+               className={this.state.searching ? "search-glass hidden" : "search-glass"}
+               src={search}
+               onClick={() => {
+                 this.setState({
+                   searching: true,
+                 })
+               }}
+              />
+               {
+                 this.props.mobile ?
+                 <img
+                   style={{height: "24px"}}
+                   src={burger}
+                   className={this.state.searching ? "burger hidden" : "burger"}
+                   onClick={() => {
+                     this.props.toggleDropDown()
+                   }}
+                  />
+                 :
+                 null
+               }
+             </div>
+           </div>
 
+
+
+
+
+
+
+
+
+
+
+        </div>
       </div>
       </>
     )
